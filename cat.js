@@ -1,4 +1,4 @@
-module.exports = function (fileName){
+module.exports = function (fileName,done){
     const fs = require('fs');
     const path ="./"+fileName;
         fs.readFile(path, 'utf8',(err,file)=>{
@@ -6,8 +6,8 @@ module.exports = function (fileName){
                 throw err
             }
             else {
-                process.stdout.write(file);
-                process.stdout.write('\nprompt >');
+                done(file);
+                
         }
     })
 }

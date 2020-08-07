@@ -1,3 +1,5 @@
+const { doesNotMatch } = require('assert');
+
 module.exports = function(url) {
     const request = require('request');
     request(url, function(error, response, body) {
@@ -5,7 +7,7 @@ module.exports = function(url) {
             throw error;
         }
         else {
-            process.stdout.write(body);
+            done(body);
         }
     })
 };
