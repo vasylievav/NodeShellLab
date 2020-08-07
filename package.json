@@ -1,0 +1,22 @@
+{
+  "name": "nodeshelllab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-d-king/NodeShellLab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-d-king/NodeShellLab/issues"
+  },
+  "homepage": "https://github.com/a-d-king/NodeShellLab#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
